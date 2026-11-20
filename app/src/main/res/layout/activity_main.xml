@@ -1,19 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
     <TextView
+        android:id="@+id/thongtin_2108"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Nhập thông tin"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+            android:id="@+id/bienso_2108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biển số xe: "
+            android:textStyle="bold" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </TextView>
+    <EditText
+        android:id="@+id/edtbienso_2108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập biển số xe "
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text">
+    </EditText>
+    <TextView
+            android:id="@+id/sogio_2108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số giờ gửi: "
+            android:textStyle="bold" >
+
+        </TextView>
+    <EditText
+        android:id="@+id/edtsogio_2108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số giờ gửi "
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text">
+    </EditText>
+    <TextView
+            android:id="@+id/dongia_2108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá mỗi giờ: "
+            android:textStyle="bold" >
+
+        </TextView>
+    <EditText
+        android:id="@+id/edtdongia_2108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đơn giá mỗi giờ "
+        android:minHeight="48dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text">
+    </EditText>
+    <Button
+        android:id="@+id/btntinh_2108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính giờ ">
+    </Button>
+    <Button
+        android:id="@+id/btnxoa_2108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa dữ liệu">
+    </Button>
+
+
+
+</LinearLayout>
